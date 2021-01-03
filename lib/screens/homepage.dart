@@ -13,9 +13,24 @@ class HomePage extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          Text("Categories", style: TextStyle(fontSize: 40),),
+          SizedBox(
+            height: 10,
+          ),
+          Center(
+              child: Text(
+            "Categories",
+            style: TextStyle(fontSize: 20),
+          )),
           Category(),
-          Text("Products", style: TextStyle(fontSize: 40),)
+          SizedBox(
+            height: 10,
+          ),
+          Center(
+            child: Text(
+              "Products",
+              style: TextStyle(fontSize: 20),
+            ),
+          )
         ],
       ),
     );

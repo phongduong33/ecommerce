@@ -11,21 +11,19 @@ class CategoryCard extends StatelessWidget {
       padding: const EdgeInsets.all(10.0),
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.white,
-          boxShadow: [
-            BoxShadow(
-              blurRadius: 5,
-              color: Colors.blueGrey
-            )
-          ]
-        ),
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(20),
+            boxShadow: [BoxShadow(blurRadius: 5, color: Colors.blueGrey)]),
         width: 100,
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(10),
           child: Column(
             children: [
               icon,
-              Text(name, style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),)
+              Text(
+                name,
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              )
             ],
           ),
         ),
